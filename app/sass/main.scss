@@ -180,8 +180,8 @@ body {
       display : inline-block;
       vertical-align : top;
 
-      padding-right : 30.8px;
-      padding-left : 30.8px;
+      padding-right : 30px;
+      padding-left : 31px;
 
       transition : all 0.5s ease;
       text-decoration : none;
@@ -194,9 +194,14 @@ body {
         background-color : $red-dark-color;
       }
     }
-  }
-  &__active {
-    background-color : $red-dark-color;
+    &--active {
+      a {
+        padding-right : 33px;
+        padding-left : 32px;
+
+        background-color : $red-dark-color;
+      }
+    }
   }
 }
 

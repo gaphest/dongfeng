@@ -5,6 +5,7 @@
 
     <meta charset="utf-8">
 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>DongFeng</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic" rel="stylesheet">
@@ -53,8 +54,8 @@
                     <li class="menu__item">
                         <a href="#">О компании</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__active">Модельный ряд</a>
+                    <li class="menu__item menu__item--active">
+                        <a href="#">Модельный ряд</a>
                     </li>
                     <li class="menu__item">
                         <a href="#">Конфигуратор</a>
@@ -218,6 +219,11 @@
     </div>
 </footer>
 
+
+<!--полифил classList для IE-->
+<!--[if gte IE 7]>
+    <script src="js/classList.min.js"></script>
+<![endif]-->
 
 <script src="js/common.js"></script>
 
