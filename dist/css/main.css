@@ -410,11 +410,13 @@ The `sprites` mixin generates identical output to the CSS template
 @include sprites($spritesheet-sprites);
 */
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  min-width: 1250px; }
 
 .container {
   width: 1215px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 10px; }
 
 .clearfix:after {
   display: table;
@@ -426,7 +428,7 @@ body {
   padding-top: 28px; }
   .page-header__img {
     background-image: url(../img/sprite.png);
-    background-position: 0px 0px;
+    background-position: 0px -50px;
     width: 147px;
     height: 129px;
     display: inline-block;
@@ -552,6 +554,7 @@ body {
   .slider-item::after {
     position: absolute;
     bottom: 5px;
+    left: 0;
     width: 100%;
     height: 55px;
     content: '';
@@ -594,14 +597,16 @@ body {
     border-radius: 50%;
     background-color: #C31803; }
   .slider-item__arrow {
+    background-image: url(../img/sprite.png);
+    background-position: 0px 0px;
+    width: 12px;
+    height: 20px;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    background-repeat: no-repeat;
     top: 30%;
-    left: 24%;
-    width: 16px;
-    height: 16px;
-    transform: rotate(45deg);
-    border-top: 3px solid #FFFFFF;
-    border-right: 3px solid #FFFFFF; }
+    left: 43%; }
 
 .slider-dots {
   position: absolute;
@@ -636,18 +641,18 @@ body {
     margin: 12px 0; }
   .offers-item__img {
     background-image: url(../img/sprite.png);
-    background-position: 0px -159px;
+    background-position: 0px -209px;
     width: 240px;
     height: 180px;
     float: left; }
     .offers-item__img--second {
       background-image: url(../img/sprite.png);
-      background-position: 0px -369px;
+      background-position: 0px -419px;
       width: 239px;
       height: 180px; }
     .offers-item__img--third {
       background-image: url(../img/sprite.png);
-      background-position: 0px -579px;
+      background-position: 0px -629px;
       width: 239px;
       height: 180px; }
   .offers-item__description {

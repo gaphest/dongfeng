@@ -10,9 +10,9 @@ function currentSlide(n) {
 
 function showSlides(n){
 
-    var slides=document.querySelectorAll('.slider-item');
-    var description=document.querySelectorAll('.slider-item__descr');
-    var dots=document.querySelectorAll('.slider-dots__dot');
+    var slides=document.getElementsByClassName('slider-item');
+    var description=document.getElementsByClassName('slider-item__descr');
+    var dots=document.getElementsByClassName('slider-dots__dot');
 
     if(n>slides.length){
         slideIndex=1;
