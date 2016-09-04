@@ -1,0 +1,4 @@
+.idea
+/node_modules/*
+!for_delete.txt
+
